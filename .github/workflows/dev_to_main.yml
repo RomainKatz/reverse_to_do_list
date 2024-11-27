@@ -19,12 +19,12 @@ jobs:
       - name: Set up Node.js for Backend
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '22'
 
       - name: Set up Node.js for Frontend
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '22'
 
       # Step 3: Install dependencies for frontend and backend
       - name: Install Backend Dependencies
@@ -51,7 +51,7 @@ jobs:
       # Step 5: Run End-to-End Tests (E2E)
       - name: Run E2E Tests
         working-directory: ./e2e-tests
-        run: npm test
+        run: npm run test
 
   build-and-push-docker:
     name: Build and Push Docker Images
