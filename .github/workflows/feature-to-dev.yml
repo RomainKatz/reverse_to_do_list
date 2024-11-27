@@ -3,7 +3,7 @@ name: Feature to Dev CI/CD
 on:
   push:
     branches:
-      - dev  # Trigger when changes are pushed to dev branch
+      - my-feature  # Trigger when changes are pushed to dev branch
 
 jobs:
   build-and-test:
